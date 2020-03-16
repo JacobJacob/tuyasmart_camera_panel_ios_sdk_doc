@@ -5,8 +5,8 @@
 * [准备工作](./resource/Preparation.md)
 * [集成 TuyaCameraPanelSDK](./resource/Integrated.md)
 * TuyaCameraPanelSDK 调用
-  * [Native预览面板](./resource/NativePanel.md)
-  * [RN预览面板](./resource/RnPanel.md)
+  * [Native 预览面板](./resource/NativePanel.md)
+  * [RN 预览面板](./resource/RnPanel.md)
   * [回放面板](./resource/PlaybackPanel.md)
   * [云存储面板](./resource/CloudStoragePanel.md)
   * [消息中心面板](./resource/MessagePanel.md)

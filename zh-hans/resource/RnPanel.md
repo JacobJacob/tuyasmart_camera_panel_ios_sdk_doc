@@ -1,6 +1,6 @@
 ## RN预览面板
 
-摄像机 RN 预览面板，封装在 TuyaPanelSDK 里面，参考 [Tuya Smart Panel SDK集成文档](https://tuyainc.github.io/tuyasmart_panel_ios_sdk_doc/)
+摄像机 RN 预览面板，封装在 TuyaPanelSDK 里面，参考 [Tuya Smart Panel SDK 集成文档](https://tuyainc.github.io/tuyasmart_panel_ios_sdk_doc/)
 
 **接口说明**
 
@@ -24,4 +24,4 @@
 
 **面板示意图**
 
-![rn预览面板](./images/camera_panel_rn_preview.PNG)
+![RN 预览面板](./images/camera_panel_rn_preview.PNG)
