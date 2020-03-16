@@ -1,6 +1,6 @@
 ## Set Panel
 
-Camera settings panel, which can be configured and displayed through the background dp point（[TuyaIPCCameraSDK - Equipment function point](https://tuyainc.github.io/tuyasmart_camera_ios_sdk_doc/en/resource/camera_device_points))，include：
+Camera settings panel, which can be configured and displayed through the background dp point [TuyaIPCCameraSDK - Equipment function](https://tuyainc.github.io/tuyasmart_camera_ios_sdk_doc/en/resource/camera_device_points)，include：
 
 - device name and icon
 - device information(owner,ip,device id, device time zone，wifi signal)

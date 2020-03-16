@@ -1,6 +1,6 @@
 ## 设置面板
 
-摄像机设置面板，可通过后台dp点配置展示（[TuyaCameraSDK 开发文档 - 设备功能点](https://tuyainc.github.io/tuyasmart_camera_android_sdk_doc/zh-hans/resource/camera_device_points)，主要包含：
+摄像机设置面板，可通过后台dp点配置展示 [TuyaCameraSDK 开发文档 - 设备功能](https://tuyainc.github.io/tuyasmart_camera_android_sdk_doc/zh-hans/resource/camera_device_points)，主要包含：
 
 - 设备图标/名称
 - 设备信息（所有者，ip地址，设备id，设备时区，信号强度等）
