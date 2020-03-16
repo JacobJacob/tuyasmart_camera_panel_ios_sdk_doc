@@ -466,35 +466,36 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h3 id="quick-integration"><a name="quick-integration" class="plugin-anchor" href="#quick-integration"><i class="fa fa-link" aria-hidden="true"></i></a>Quick integration</h3>
-<p>Add the following code to the <code>podfile</code> file:</p>
-<pre class="language-"><code class="lang-ruby">platform <span class="token symbol">:ios</span><span class="token punctuation">,</span> <span class="token string">&apos;9.0&apos;</span>
+                                <h2 id="quick-integration"><a name="quick-integration" class="plugin-anchor" href="#quick-integration"><i class="fa fa-link" aria-hidden="true"></i></a>Quick integration</h2>
+<h3 id="use-cocoapods-integration"><a name="use-cocoapods-integration" class="plugin-anchor" href="#use-cocoapods-integration"><i class="fa fa-link" aria-hidden="true"></i></a>Use CocoaPods integration</h3>
+<p>Add the following code to the <code>Podfile</code> file:</p>
+<pre class="language-"><code class="lang-ruby">source <span class="token string">&quot;https://github.com/TuyaInc/TYPublicSpecs.git&quot;</span>
+source <span class="token string">&apos;https://cdn.cocoapods.org/&apos;</span>
+
+platform<span class="token punctuation">:</span> ios<span class="token punctuation">,</span> <span class="token string">&apos;9.0&apos;</span>
 
 target <span class="token string">&apos;TuyaSmartCameraPanelSDK_Example&apos;</span> <span class="token keyword">do</span>
-  pod <span class="token string">&apos;TuyaSmartCameraPanelSDK&apos;</span><span class="token punctuation">,</span> <span class="token symbol">:git</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token string">&apos;https://gitlab.com/TuyaSmartCameraPanel/tuyasmart_camera_panel_sdk_ios.git&apos;</span>
+  pod <span class="token string">&apos;TuyaSmartCameraPanelSDK&apos;</span>
   pod <span class="token string">&apos;TuyaSmartHomeKit&apos;</span>
-  pod <span class="token string">&quot;TuyaSmartPanelSDK&quot;</span><span class="token punctuation">,</span> <span class="token symbol">:git</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token string">&quot;https://gitlab.com/TuyaSmartPanel/tuyasmart_panel_ios_sdk.git&quot;</span>
+  pod <span class="token string">&quot;TuyaSmartPanelSDK&quot;</span>
+
 <span class="token keyword">end</span>
 </code></pre>
 <p>Then execute the <code>pod update</code> command in the project root directory to integrate third-party libraries.</p>
-<p>Please refer to the use of CocoaPods&#xFF1A;<a href="https://guides.cocoapods.org/" target="_blank">CocoaPods Guides</a></p>
-<h3 id="project-configuration"><a name="project-configuration" class="plugin-anchor" href="#project-configuration"><i class="fa fa-link" aria-hidden="true"></i></a>Project configuration</h3>
-<p>In the corresponding Target, select <code>Build Settings</code>, search for<code>Enable Bitcode</code>, and set to <code>NO</code>.</p>
-<h3 id="initialization"><a name="initialization" class="plugin-anchor" href="#initialization"><i class="fa fa-link" aria-hidden="true"></i></a>Initialization</h3>
-<p>TuyaSmartHomeKit version 2.8.0 has been added for security image verification (to continue using the old version can skip steps 1, 2), and enabled the new appkey / secret. Please go to the developer platform to regenerate the required files for SDK initialization and follow the steps below to integrate:</p>
-<ol>
-<li>Open the project settings, Target =&gt; General, and change the Bundle Identifier to the iOS package name corresponding to the Tuya Developer Platform.</li>
-<li>Import the security image to the project root directory, rename it to t_s.bmp, and add it to &quot;Project Settings =&gt; Target =&gt; Build Phases =&gt; Copy Bundle Resources&quot;.</li>
-<li>Add the following to the project&apos;s <code>PrefixHeader.pch</code> file (Swift projects can be added to the xxx_Bridging-Header.h bridge file):</li>
-</ol>
-<pre class="language-"><code class="lang-objective-c">#import &lt;TuyaSmartHomeKit/TuyaSmartKit.h&gt;
-#import &quot;TuyaSmartPanelSDK.h&quot;
-#import &lt;TuyaSmartCameraPanelSDK/TuyaSmartCameraPanelSDK.h&gt;
+<p>Please refer to the use of CocoaPods: <a href="https://guides.cocoapods.org/" target="_blank">CocoaPods Guides</a></p>
+<h2 id="project-configuration"><a name="project-configuration" class="plugin-anchor" href="#project-configuration"><i class="fa fa-link" aria-hidden="true"></i></a>Project configuration</h2>
+<p>In the corresponding Target, select  <code>Build Settings</code>, search for  <code>Enable Bitcode</code>, and set it to <code>NO</code>.</p>
+<h2 id="integration-sdk"><a name="integration-sdk" class="plugin-anchor" href="#integration-sdk"><i class="fa fa-link" aria-hidden="true"></i></a>Integration SDK</h2>
+<h3 id="header-file-import"><a name="header-file-import" class="plugin-anchor" href="#header-file-import"><i class="fa fa-link" aria-hidden="true"></i></a>Header file import</h3>
+<p>Objective-C projects are added where needed</p>
+<pre class="language-"><code class="lang-objective-c">#import &lt;TuyaSmartCameraPanelSDK/TuyaSmartCameraPanelSDK.h&gt;
 </code></pre>
-<p>Open the <code>AppDelegate.m</code> file and initialize the SDK in the <code>[AppDelegate application: didFinishLaunchingWithOptions:]</code>  method:</p>
-<pre class="language-"><code class="lang-objective-c">[[TuyaSmartSDK sharedInstance] startWithAppKey:<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>#your_app_key#</span><span class="token punctuation">&gt;</span></span> secretKey:<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>#your_secret_key#</span><span class="token punctuation">&gt;</span></span>];
+<p>Swift Please add the following to the <code>xxx_Bridging-Header.h</code> bridge file</p>
+<pre class="language-"><code class="lang-swift">#<span class="token keyword">import</span> <span class="token operator">&lt;</span><span class="token builtin">TuyaSmartCameraPanelSDK</span><span class="token operator">/</span><span class="token builtin">TuyaSmartCameraPanelSDK</span><span class="token punctuation">.</span>h<span class="token operator">&gt;</span>
 </code></pre>
-<p>At this point, the preparations have been completed and the app development can begin. Learn more about TuyaSmartHomeKit access please go to&#xFF1A;<a href="https://tuyainc.github.io/tuyasmart_home_ios_sdk_doc/en/" target="_blank">TuyaSmartHomeKit Document</a></p>
+<p>Then add it where the project needs to be used</p>
+<pre class="language-"><code class="lang-swift"><span class="token keyword">import</span> <span class="token builtin">TuyaSmartCameraPanelSDK</span>
+</code></pre>
 
                                 
                                 </section>
@@ -534,7 +535,7 @@ target <span class="token string">&apos;TuyaSmartCameraPanelSDK_Example&apos;</s
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Integrated TuyaCameraPanelSDK","level":"1.4","depth":1,"next":{"title":"TuyaCameraPanelSDK","level":"1.5","depth":1,"ref":"","articles":[{"title":"Native Preview Panel","level":"1.5.1","depth":2,"path":"resource/NativePanel.md","ref":"./resource/NativePanel.md","articles":[]},{"title":"RN Preview Panel","level":"1.5.2","depth":2,"path":"resource/RnPanel.md","ref":"./resource/RnPanel.md","articles":[]},{"title":"Playback Panel","level":"1.5.3","depth":2,"path":"resource/PlaybackPanel.md","ref":"./resource/PlaybackPanel.md","articles":[]},{"title":"Cloud Storage Panel","level":"1.5.4","depth":2,"path":"resource/CloudStoragePanel.md","ref":"./resource/CloudStoragePanel.md","articles":[]},{"title":"Message Center Panel","level":"1.5.5","depth":2,"path":"resource/MessagePanel.md","ref":"./resource/MessagePanel.md","articles":[]},{"title":"Album Panel","level":"1.5.6","depth":2,"path":"resource/AlbumPanel.md","ref":"./resource/AlbumPanel.md","articles":[]},{"title":"Settings Panel","level":"1.5.7","depth":2,"path":"resource/SetPanel.md","ref":"./resource/SetPanel.md","articles":[]}]},"previous":{"title":"Preparation before integration","level":"1.3","depth":1,"path":"resource/Preparation.md","ref":"./resource/Preparation.md","articles":[]},"dir":"ltr"},"config":{"plugins":["js-sequence-diagram-full@>=0.3.1","prism","-highlight","anchors"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"java":"java"},"ignore":["sequence"]},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"js-sequence-diagram-full":{},"fontsettings":{"theme":"white","family":"sans","size":2},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"en","gitbook":"*"},"file":{"path":"resource/Integrated.md","mtime":"2020-03-13T06:43:02.163Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-16T09:24:46.766Z"},"basePath":"..","book":{"language":"en"}});
+            gitbook.page.hasChanged({"page":{"title":"Integrated TuyaCameraPanelSDK","level":"1.4","depth":1,"next":{"title":"TuyaCameraPanelSDK","level":"1.5","depth":1,"ref":"","articles":[{"title":"Native Preview Panel","level":"1.5.1","depth":2,"path":"resource/NativePanel.md","ref":"./resource/NativePanel.md","articles":[]},{"title":"RN Preview Panel","level":"1.5.2","depth":2,"path":"resource/RnPanel.md","ref":"./resource/RnPanel.md","articles":[]},{"title":"Playback Panel","level":"1.5.3","depth":2,"path":"resource/PlaybackPanel.md","ref":"./resource/PlaybackPanel.md","articles":[]},{"title":"Cloud Storage Panel","level":"1.5.4","depth":2,"path":"resource/CloudStoragePanel.md","ref":"./resource/CloudStoragePanel.md","articles":[]},{"title":"Message Center Panel","level":"1.5.5","depth":2,"path":"resource/MessagePanel.md","ref":"./resource/MessagePanel.md","articles":[]},{"title":"Album Panel","level":"1.5.6","depth":2,"path":"resource/AlbumPanel.md","ref":"./resource/AlbumPanel.md","articles":[]},{"title":"Settings Panel","level":"1.5.7","depth":2,"path":"resource/SetPanel.md","ref":"./resource/SetPanel.md","articles":[]}]},"previous":{"title":"Preparation before integration","level":"1.3","depth":1,"path":"resource/Preparation.md","ref":"./resource/Preparation.md","articles":[]},"dir":"ltr"},"config":{"plugins":["js-sequence-diagram-full@>=0.3.1","prism","-highlight","anchors"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"java":"java"},"ignore":["sequence"]},"js-sequence-diagram-full":{},"anchors":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"en","gitbook":"*"},"file":{"path":"resource/Integrated.md","mtime":"2020-03-16T09:32:56.521Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-16T09:33:38.777Z"},"basePath":"..","book":{"language":"en"}});
         });
     </script>
 </div>
@@ -549,10 +550,6 @@ target <span class="token string">&apos;TuyaSmartCameraPanelSDK_Example&apos;</s
     
         
         <script src="../../gitbook/gitbook-plugin-js-sequence-diagram-full/plugin.js"></script>
-        
-    
-        
-        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
         
     
         
