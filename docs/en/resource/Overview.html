@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Function Overview · GitBook</title>
+        <title>Panel Overview · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -111,7 +111,7 @@
                 <a href="Overview.html">
             
                     
-                    Function Overview
+                    Panel Overview
             
                 </a>
             
@@ -453,7 +453,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Function Overview</a>
+        <a href=".." >Panel Overview</a>
     </h1>
 </div>
 
@@ -468,28 +468,42 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h2 id="overview"><a name="overview" class="plugin-anchor" href="#overview"><i class="fa fa-link" aria-hidden="true"></i></a>Overview</h2>
-<p>Tuya Smart Camera Panel SDK (referred to as: TuyaCameraPanelSDK) provides users with Tuya Camera related panels, which mainly include:</p>
-<ul>
-<li>Native preview panel</li>
-<li>React Native Panel&#xFF08;refer to <a href="https://tuyainc.github.io/tuyasmart_panel_ios_sdk_doc/en/" target="_blank">TuyaPanelSDK Document</a> )</li>
-<li>Cloud Storage Panel</li>
-<li>Playback Panel</li>
-<li>Setting Panel</li>
-<li>Album Panel</li>
-<li>Custom Panel<ul>
-<li>customize playback</li>
-<li>customize cloud storage</li>
-<li>customize ablum</li>
-<li>customize message center</li>
-<li>customize set<ul>
-<li>customize device info</li>
-<li>customize feedback</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+                                <h2 id="panel-overview"><a name="panel-overview" class="plugin-anchor" href="#panel-overview"><i class="fa fa-link" aria-hidden="true"></i></a>Panel Overview</h2>
+<p>Tuya Smart Camera Panel SDK (referred to as: TuyaCameraPanelSDK) provides user-friendly Tuya camera related panels for the convenience of users and reduces the cost of camera panel development, mainly including:</p>
+<table>
+<thead>
+<tr>
+<th>Class name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TYCameraViewContronller</td>
+<td>Camera native preview panel, mainly including live video preview.</td>
+</tr>
+<tr>
+<td>TYCameraNewPlaybackViewController</td>
+<td>Camera playback panel, showing videos stored on the camera storage device.</td>
+</tr>
+<tr>
+<td>TYCameraCloudViewController</td>
+<td>Camera cloud storage panel, showing the recorded cloud video after the cloud storage function is activated.</td>
+</tr>
+<tr>
+<td>TYPhotoPickerController</td>
+<td>Camera album panel, which shows the screenshot or recorded video file saved according to the device id.</td>
+</tr>
+<tr>
+<td>TYCameraDetectViewController</td>
+<td>Camera message center panel, including various detection alarm messages generated during camera recording.</td>
+</tr>
+<tr>
+<td>TuyaSmartCameraSettingViewController</td>
+<td>Camera settings panel, including device information, basic settings, storage settings, restart device, restart device and other commonly used camera functions.</td>
+</tr>
+</tbody>
+</table>
 
                                 
                                 </section>
@@ -533,7 +547,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Function Overview","level":"1.2","depth":1,"next":{"title":"Preparation before integration","level":"1.3","depth":1,"path":"resource/Preparation.md","ref":"./resource/Preparation.md","articles":[]},"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["js-sequence-diagram-full@>=0.3.1","prism","-highlight","anchors"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"java":"java"},"ignore":["sequence"]},"js-sequence-diagram-full":{},"anchors":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"en","gitbook":"*"},"file":{"path":"resource/Overview.md","mtime":"2020-03-13T06:59:39.844Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-16T12:56:29.143Z"},"basePath":"..","book":{"language":"en"}});
+            gitbook.page.hasChanged({"page":{"title":"Panel Overview","level":"1.2","depth":1,"next":{"title":"Preparation before integration","level":"1.3","depth":1,"path":"resource/Preparation.md","ref":"./resource/Preparation.md","articles":[]},"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["js-sequence-diagram-full@>=0.3.1","prism","-highlight","anchors"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"java":"java"},"ignore":["sequence"]},"js-sequence-diagram-full":{},"anchors":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"en","gitbook":"*"},"file":{"path":"resource/Overview.md","mtime":"2020-03-17T03:58:23.569Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-17T03:59:58.292Z"},"basePath":"..","book":{"language":"en"}});
         });
     </script>
 </div>

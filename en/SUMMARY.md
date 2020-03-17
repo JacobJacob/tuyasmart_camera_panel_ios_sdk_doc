@@ -1,7 +1,7 @@
 # Summary
 
 * [Introduction](/README.md)
-* [Function Overview](./resource/Overview.md)
+* [Panel Overview](./resource/Overview.md)
 * [Preparation before integration](./resource/Preparation.md)
 * [Integrated TuyaCameraPanelSDK](./resource/Integrated.md)
 * TuyaCameraPanelSDK

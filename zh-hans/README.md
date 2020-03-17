@@ -44,13 +44,13 @@ Objective-C 项目在需要使用的地方添加
 #import <TuyaSmartCameraPanelSDK/TuyaSmartCameraPanelSDK.h>
 ```
 
-Swift 请现在  `xxx_Bridging-Header.h`  桥接文件中添加以下内容
+Swift 请在  `xxx_Bridging-Header.h`  桥接文件中添加以下内容
 
 ```swift
 #import <TuyaSmartCameraPanelSDK/TuyaSmartCameraPanelSDK.h>
 ```
 
-然后在项目在需要使用的地方添加
+然后在项目需要使用的地方添加
 
 ```swift
 import TuyaSmartCameraPanelSDK

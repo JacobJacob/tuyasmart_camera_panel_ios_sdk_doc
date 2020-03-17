@@ -1,7 +1,7 @@
 # 概要
 
 * [前言](/README.md)
-* [功能概述](./resource/Overview.md)
+* [面板概述](./resource/Overview.md)
 * [准备工作](./resource/Preparation.md)
 * [集成 TuyaCameraPanelSDK](./resource/Integrated.md)
 * TuyaCameraPanelSDK 调用
