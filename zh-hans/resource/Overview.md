@@ -3,7 +3,7 @@
 涂鸦智能摄像机面板SDK（简称：TuyaCameraPanelSDK）为方便用户，减少摄像机面板开发成本，提供了涂鸦摄像机相关的面板，主要包括：
 
 | 类名                    | 说明 |
-| ----------------------- | ---- |
+| :----------------------- | :---- |
 | TYCameraViewContronller |  摄像机原生预览面板，主要包括视频实时预览。  |
 | TYCameraNewPlaybackViewController |  摄像机回放面板，展示的是保存在摄像机存储设备上的视频。  |
 | TYCameraCloudViewController |  摄像机云存储面板，展示开通云存储功能之后录制保存的云端视频。    |
