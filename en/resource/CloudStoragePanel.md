@@ -11,7 +11,7 @@ The camera's cloud storage panel displays recorded cloud videos recorded after t
 **Parameter**
 
 | Parameter   | Description          |
-| :---------- | :------------------- |
+| ---------- | ------------------- |
 | deviceModel | TuyaSmartDeviceModel |
 
 **Example**

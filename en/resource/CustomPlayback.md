@@ -13,7 +13,7 @@ implement  this TuyaSmartCameraPanelSDKDelegate delegate method:
 **Parameter**
 
 | Parameter      | Description             |
-| :------------- | :---------------------- |
+| ------------- | ---------------------- |
 | cameraPanelSDK | TuyaSmartCameraPanelSDK |
 | deviceModel    | TuyaSmartDeviceModel    |
 

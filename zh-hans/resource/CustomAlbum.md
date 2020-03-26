@@ -13,7 +13,7 @@
 **参数说明**
 
 | 参数           | 说明                         |
-| :------------- | :--------------------------- |
+| ------------- | --------------------------- |
 | cameraPanelSDK | TuyaSmartCameraPanelSDK 单例 |
 | deviceModel    | TuyaSmartDeviceModel 数据    |
 

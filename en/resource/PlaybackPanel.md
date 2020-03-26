@@ -11,7 +11,7 @@ The camera playback panel displays the video saved on the camera storage device,
 **Parameter**
 
 | Parameter   | Description               |
-| :---------- | :------------------------ |
+| ---------- | ------------------------ |
 | deviceModel | TuyaSmartDeviceModel data |
 
 **Example**

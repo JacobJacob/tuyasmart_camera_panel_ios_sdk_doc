@@ -1,4 +1,4 @@
-# TuyaSmartCameraPanel SDK Documentation
+# TuyaSmart iOS IPC biz Bundle Documentation
 
 
 * [English](https://tuyainc.github.io/tuyasmart_camera_panel_ios_sdk_doc/en/)

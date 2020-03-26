@@ -11,7 +11,7 @@ The camera message center panel includes all kinds of messages generated during 
 **Parameter**
 
 | Parameter   | Description          |
-| :---------- | :------------------- |
+| ---------- | ------------------- |
 | deviceModel | TuyaSmartDeviceModel |
 
 **Example**

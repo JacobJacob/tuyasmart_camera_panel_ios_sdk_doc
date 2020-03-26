@@ -1,8 +1,8 @@
-# 涂鸦智能 iOS Camera Panel SDK 
+# 涂鸦智能 iOS IPC 业务包 
 
 ## 功能概述
 
-涂鸦智能 iOS Camera Panel SDK（ TuyaCameraPanelSDK ）是基于 [Tuya Smart Camera SDK](<https://tuyainc.github.io/tuyasmart_camera_ios_sdk_doc/>) 开发的一系列摄像机功能相关的面板 SDK。主要包括以下功能：
+涂鸦智能 iOS IPC 业务包（ TuyaCameraPanelSDK ）是基于 [Tuya Smart Camera SDK](<https://tuyainc.github.io/tuyasmart_camera_ios_sdk_doc/>) 开发的一系列摄像机功能相关的面板 SDK。主要包括以下功能：
 
 - 预览面板，回放面板，云存储面板，消息中心面板，相册面板，设置面板。
 

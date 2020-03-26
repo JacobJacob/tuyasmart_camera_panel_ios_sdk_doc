@@ -23,7 +23,7 @@ Camera settings panel, which can be configured and displayed through the backgro
 **Parameter**
 
 | Parameter   | Description               |
-| :---------- | :------------------------ |
+| ---------- | ------------------------ |
 | deviceModel | TuyaSmartDeviceModel data |
 
 **Example**

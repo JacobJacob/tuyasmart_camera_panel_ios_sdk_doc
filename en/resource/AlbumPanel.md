@@ -11,7 +11,7 @@ The camera album panel shows the files saved according to the device id. These f
 **Parameter**
 
 | Parameter   | Description               |
-| :---------- | :------------------------ |
+| ---------- | ------------------------ |
 | deviceModel | TuyaSmartDeviceModel data |
 
 **Example**

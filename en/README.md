@@ -1,8 +1,8 @@
-# Tuya Smart iOS Camera Panel SDK
+# TuyaSmart iOS IPC biz Bundle
 
 ## Functional Overview
 
-Tuya Smart iOS Camera Panel SDK (TuyaCameraPanelSDK) is a series of panel SDK related to camera functions developed based on [Tuya Smart Camera SDK](<https://tuyainc.github.io/tuyasmart_camera_ios_sdk_doc/>). It mainly includes the following functions:
+TuyaSmart iOS IPC biz Bundle (TuyaCameraPanelSDK) is a series of panel SDK related to camera functions developed based on [Tuya Smart Camera SDK](<https://tuyainc.github.io/tuyasmart_camera_ios_sdk_doc/>). It mainly includes the following functions:
 
 -Preview panel, playback panel, cloud storage panel, message center panel, album panel, settings panel.
 

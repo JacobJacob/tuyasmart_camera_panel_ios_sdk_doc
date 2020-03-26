@@ -12,7 +12,7 @@ Camera RN preview panel, packaged in TuyaPanelSDK, refer to [TuyaPanelSDK](https
 **Parameter**
 
 | Parameter   | Description          |
-| :---------- | :------------------- |
+| ---------- | ------------------- |
 | deviceModel | TuyaSmartDeviceModel |
 
 **Example**

@@ -11,7 +11,7 @@ Camera native preview panel, including real-time video preview, sharpness switch
 **Parameter**
 
 | Parameter   | Description               |
-| :---------- | :------------------------ |
+| ---------- | ------------------------ |
 | deviceModel | TuyaSmartDeviceModel data |
 
 **Example**
