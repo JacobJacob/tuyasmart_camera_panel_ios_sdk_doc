@@ -25,6 +25,26 @@
                 
             
                 
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
                 
             
@@ -53,6 +73,8 @@
         
     
     
+    
+    
     <meta name="HandheldFriendly" content="true"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -64,6 +86,24 @@
     <link rel="next" href="resource/Overview.html" />
     
     
+
+    
+        <link rel="shortcut icon" href='zh-hans/resource/images/bitbug_favicon.ico' type="image/x-icon">
+    
+    
+    
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"TuyaInc","repo":"tuyasmart_camera_panel_android_sdk","type":"star","size":"small"},{"user":"TuyaInc","repo":"tuyasmart_camera_panel_android_sdk","type":"watch","size":"small"},{"user":"TuyaInc","type":"follow","size":"small","count":true}]};
+    </script>
 
     </head>
     <body>
@@ -143,14 +183,14 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5" >
+        <li class="chapter " data-level="1.5" data-path="resource/CallSDK.html">
             
-                <span>
+                <a href="resource/CallSDK.html">
             
                     
                     TuyaCameraPanelSDK
             
-                </span>
+                </a>
             
 
             
@@ -466,12 +506,12 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="tuyasmart-ios-ipc-biz-bundle"><a name="tuyasmart-ios-ipc-biz-bundle" class="plugin-anchor" href="#tuyasmart-ios-ipc-biz-bundle"><i class="fa fa-link" aria-hidden="true"></i></a>TuyaSmart iOS IPC biz Bundle</h1>
-<h2 id="functional-overview"><a name="functional-overview" class="plugin-anchor" href="#functional-overview"><i class="fa fa-link" aria-hidden="true"></i></a>Functional Overview</h2>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#tuyasmart-ios-ipc-biz-bundle"><b></b>TuyaSmart iOS IPC biz Bundle</a></li><ul><li><span class="title-icon "></span><a href="#functional-overview"><b></b>Functional Overview</a></li><li><span class="title-icon "></span><a href="#quick-integration"><b></b>Quick integration</a></li><ul><li><span class="title-icon "></span><a href="#use-cocoapods-integration"><b></b>Use CocoaPods integration</a></li></ul><li><span class="title-icon "></span><a href="#project-configuration"><b></b>Project configuration</a></li><li><span class="title-icon "></span><a href="#integration-sdk"><b></b>Integration SDK</a></li><ul><li><span class="title-icon "></span><a href="#header-file-import"><b></b>Header file import</a></li></ul></ul></ul></div><a href="#tuyasmart-ios-ipc-biz-bundle" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="tuyasmart-ios-ipc-biz-bundle"><a name="tuyasmart-ios-ipc-biz-bundle" class="anchor-navigation-ex-anchor" href="#tuyasmart-ios-ipc-biz-bundle"><i class="fa fa-link" aria-hidden="true"></i></a><a name="tuyasmart-ios-ipc-biz-bundle" class="plugin-anchor" href="#tuyasmart-ios-ipc-biz-bundle"><i class="fa fa-link" aria-hidden="true"></i></a>TuyaSmart iOS IPC biz Bundle</h1>
+<h2 id="functional-overview"><a name="functional-overview" class="anchor-navigation-ex-anchor" href="#functional-overview"><i class="fa fa-link" aria-hidden="true"></i></a><a name="functional-overview" class="plugin-anchor" href="#functional-overview"><i class="fa fa-link" aria-hidden="true"></i></a>Functional Overview</h2>
 <p>TuyaSmart iOS IPC biz Bundle (TuyaCameraPanelSDK) is a series of panel SDK related to camera functions developed based on <a href="https://tuyainc.github.io/tuyasmart_camera_ios_sdk_doc/" target="_blank">Tuya Smart Camera SDK</a>. It mainly includes the following functions:</p>
 <p>-Preview panel, playback panel, cloud storage panel, message center panel, album panel, settings panel.</p>
-<h2 id="quick-integration"><a name="quick-integration" class="plugin-anchor" href="#quick-integration"><i class="fa fa-link" aria-hidden="true"></i></a>Quick integration</h2>
-<h3 id="use-cocoapods-integration"><a name="use-cocoapods-integration" class="plugin-anchor" href="#use-cocoapods-integration"><i class="fa fa-link" aria-hidden="true"></i></a>Use CocoaPods integration</h3>
+<h2 id="quick-integration"><a name="quick-integration" class="anchor-navigation-ex-anchor" href="#quick-integration"><i class="fa fa-link" aria-hidden="true"></i></a><a name="quick-integration" class="plugin-anchor" href="#quick-integration"><i class="fa fa-link" aria-hidden="true"></i></a>Quick integration</h2>
+<h3 id="use-cocoapods-integration"><a name="use-cocoapods-integration" class="anchor-navigation-ex-anchor" href="#use-cocoapods-integration"><i class="fa fa-link" aria-hidden="true"></i></a><a name="use-cocoapods-integration" class="plugin-anchor" href="#use-cocoapods-integration"><i class="fa fa-link" aria-hidden="true"></i></a>Use CocoaPods integration</h3>
 <p>Add the following code to the <code>Podfile</code> file:</p>
 <pre class="language-"><code class="lang-ruby">source <span class="token string">&quot;https://github.com/TuyaInc/TYPublicSpecs.git&quot;</span>
 source <span class="token string">&apos;https://cdn.cocoapods.org/&apos;</span>
@@ -487,12 +527,12 @@ target <span class="token string">&apos;TuyaSmartCameraPanelSDK_Example&apos;</s
 </code></pre>
 <p>Then execute the <code>pod update</code> command in the project root directory to integrate third-party libraries.</p>
 <p>Please refer to the use of CocoaPods: <a href="https://guides.cocoapods.org/" target="_blank">CocoaPods Guides</a></p>
-<h2 id="project-configuration"><a name="project-configuration" class="plugin-anchor" href="#project-configuration"><i class="fa fa-link" aria-hidden="true"></i></a>Project configuration</h2>
+<h2 id="project-configuration"><a name="project-configuration" class="anchor-navigation-ex-anchor" href="#project-configuration"><i class="fa fa-link" aria-hidden="true"></i></a><a name="project-configuration" class="plugin-anchor" href="#project-configuration"><i class="fa fa-link" aria-hidden="true"></i></a>Project configuration</h2>
 <p>In the corresponding Target, select  <code>Build Settings</code>, search for  <code>Enable Bitcode</code>, and set it to <code>NO</code>.</p>
-<h2 id="integration-sdk"><a name="integration-sdk" class="plugin-anchor" href="#integration-sdk"><i class="fa fa-link" aria-hidden="true"></i></a>Integration SDK</h2>
-<h3 id="header-file-import"><a name="header-file-import" class="plugin-anchor" href="#header-file-import"><i class="fa fa-link" aria-hidden="true"></i></a>Header file import</h3>
+<h2 id="integration-sdk"><a name="integration-sdk" class="anchor-navigation-ex-anchor" href="#integration-sdk"><i class="fa fa-link" aria-hidden="true"></i></a><a name="integration-sdk" class="plugin-anchor" href="#integration-sdk"><i class="fa fa-link" aria-hidden="true"></i></a>Integration SDK</h2>
+<h3 id="header-file-import"><a name="header-file-import" class="anchor-navigation-ex-anchor" href="#header-file-import"><i class="fa fa-link" aria-hidden="true"></i></a><a name="header-file-import" class="plugin-anchor" href="#header-file-import"><i class="fa fa-link" aria-hidden="true"></i></a>Header file import</h3>
 <p>Objective-C projects are added where needed</p>
-<pre class="language-"><code class="lang-objective-c">#import &lt;TuyaSmartCameraPanelSDK/TuyaSmartCameraPanelSDK.h&gt;
+<pre class="language-"><code class="lang-objective-c"><span class="token macro property">#<span class="token directive keyword">import</span> &lt;TuyaSmartCameraPanelSDK/TuyaSmartCameraPanelSDK.h&gt;</span>
 </code></pre>
 <p>Swift Please add the following to the <code>xxx_Bridging-Header.h</code> bridge file</p>
 <pre class="language-"><code class="lang-swift">#<span class="token keyword">import</span> <span class="token operator">&lt;</span><span class="token builtin">TuyaSmartCameraPanelSDK</span><span class="token operator">/</span><span class="token builtin">TuyaSmartCameraPanelSDK</span><span class="token punctuation">.</span>h<span class="token operator">&gt;</span>
@@ -539,7 +579,7 @@ target <span class="token string">&apos;TuyaSmartCameraPanelSDK_Example&apos;</s
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"next":{"title":"Panel Overview","level":"1.2","depth":1,"path":"resource/Overview.md","ref":"./resource/Overview.md","articles":[]},"dir":"ltr"},"config":{"plugins":["js-sequence-diagram-full@>=0.3.1","prism","-highlight","anchors"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"java":"java"},"ignore":["sequence"]},"js-sequence-diagram-full":{},"anchors":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"en","gitbook":"*"},"file":{"path":"README.md","mtime":"2020-03-26T03:32:09.359Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-26T03:33:08.531Z"},"basePath":".","book":{"language":"en"}});
+            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"next":{"title":"Panel Overview","level":"1.2","depth":1,"path":"resource/Overview.md","ref":"./resource/Overview.md","articles":[]},"dir":"ltr"},"config":{"plugins":["js-sequence-diagram-full@>=0.3.1","prism","-highlight","anchors","splitter","github","github-buttons","anchor-navigation-ex","alerts","expandable-chapters-small","favicon","pageview-count"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"oc":"objectivec","objc":"objectivec","objective-c":"objectivec"},"ignore":["sequence"]},"github":{"url":"https://github.com/TuyaInc/tuyasmart_panel_ios_sdk"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"js-sequence-diagram-full":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"favicon":{"shortcut":"zh-hans/resource/images/bitbug_favicon.ico"},"pageview-count":{},"alerts":{},"github-buttons":{"buttons":[{"user":"TuyaInc","repo":"tuyasmart_camera_panel_android_sdk","type":"star","size":"small"},{"user":"TuyaInc","repo":"tuyasmart_camera_panel_android_sdk","type":"watch","size":"small"},{"user":"TuyaInc","type":"follow","size":"small","count":true}]},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":true,"weibo":true,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"en","gitbook":"*"},"file":{"path":"README.md","mtime":"2020-06-09T10:44:04.304Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-09T11:21:11.884Z"},"basePath":".","book":{"language":"en"}});
         });
     </script>
 </div>
@@ -554,6 +594,30 @@ target <span class="token string">&apos;TuyaSmartCameraPanelSDK_Example&apos;</s
     
         
         <script src="../gitbook/gitbook-plugin-js-sequence-diagram-full/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
         
     
         
