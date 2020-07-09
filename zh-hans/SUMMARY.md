@@ -2,9 +2,9 @@
 
 * [前言](/README.md)
 * [面板概述](./resource/Overview.md)
-* [集成准备](./resource/Preparation.md)
+* [准备工作](./resource/Preparation.md)
 * [集成 TuyaCameraPanelSDK](./resource/Integrated.md)
-* [TuyaCameraPanelSDK 调用](./resource/CallSDK.md)
+* TuyaCameraPanelSDK 调用
   * [Native 预览面板](./resource/NativePanel.md)
   * [RN 预览面板](./resource/RnPanel.md)
   * [回放面板](./resource/PlaybackPanel.md)
@@ -24,4 +24,4 @@
   * [设备名称](./resource/DeviceName.md)
 * [常见问题](./resource/FAQ.md)
 * [更新日志](./resource/Update-Log.md) 
-
+* [迁移指南](Upgrading.md)

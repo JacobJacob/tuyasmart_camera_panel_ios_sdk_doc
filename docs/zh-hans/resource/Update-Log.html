@@ -12,12 +12,17 @@
         
         
     
+    
     <link rel="stylesheet" href="../../gitbook/style.css">
 
     
             
                 
-                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism.css">
                 
             
                 
@@ -33,15 +38,19 @@
                 
             
                 
-                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-alerts/style.css">
-                
-            
-                
                 <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
                 
             
                 
                 <link rel="stylesheet" href="../../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
                 
             
                 
@@ -70,9 +79,9 @@
         
     
 
+    
+
         
-    
-    
     
     
     <meta name="HandheldFriendly" content="true"/>
@@ -83,27 +92,11 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="../Upgrading.html" />
+    
     
     <link rel="prev" href="FAQ.html" />
     
-
-    
-        <link rel="shortcut icon" href='../zh-hans/resource/images/bitbug_favicon.ico' type="image/x-icon">
-    
-    
-    
-    
-
-    <style>
-    @media only screen and (max-width: 640px) {
-        .book-header .hidden-mobile {
-            display: none;
-        }
-    }
-    </style>
-    <script>
-        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"TuyaInc","repo":"tuyasmart_camera_panel_ios_sdk","type":"star","size":"small"},{"user":"TuyaInc","repo":"tuyasmart_camera_panel_ios_sdk","type":"watch","size":"small"},{"user":"TuyaInc","type":"follow","size":"small","count":true}]};
-    </script>
 
     </head>
     <body>
@@ -162,7 +155,7 @@
                 <a href="Preparation.html">
             
                     
-                    集成准备
+                    准备工作
             
                 </a>
             
@@ -183,14 +176,14 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5" data-path="CallSDK.html">
+        <li class="chapter " data-level="1.5" >
             
-                <a href="CallSDK.html">
+                <span>
             
                     
                     TuyaCameraPanelSDK 调用
             
-                </a>
+                </span>
             
 
             
@@ -461,6 +454,19 @@
             
         </li>
     
+        <li class="chapter " data-level="1.10" data-path="../Upgrading.html">
+            
+                <a href="../Upgrading.html">
+            
+                    
+                    迁移指南
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
 
@@ -506,7 +512,7 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><li><span class="title-icon "></span><a href="#&#x66F4;&#x65B0;&#x65E5;&#x5FD7;"><b></b>&#x66F4;&#x65B0;&#x65E5;&#x5FD7;</a></li></ul></ul></div><a href="#" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h2 id="&#x66F4;&#x65B0;&#x65E5;&#x5FD7;"><a name="&#x66F4;&#x65B0;&#x65E5;&#x5FD7;" class="anchor-navigation-ex-anchor" href="#&#x66F4;&#x65B0;&#x65E5;&#x5FD7;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x66F4;&#x65B0;&#x65E5;&#x5FD7;" class="plugin-anchor" href="#&#x66F4;&#x65B0;&#x65E5;&#x5FD7;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x66F4;&#x65B0;&#x65E5;&#x5FD7;</h2>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><li><span class="title-icon "></span><a href="#&#x66F4;&#x65B0;&#x65E5;&#x5FD7;"><b>1.1. </b>&#x66F4;&#x65B0;&#x65E5;&#x5FD7;</a></li></ul></ul></div><a href="#" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h2 id="&#x66F4;&#x65B0;&#x65E5;&#x5FD7;"><a name="&#x66F4;&#x65B0;&#x65E5;&#x5FD7;" class="anchor-navigation-ex-anchor" href="#&#x66F4;&#x65B0;&#x65E5;&#x5FD7;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. &#x66F4;&#x65B0;&#x65E5;&#x5FD7;</h2>
 <table>
 <thead>
 <tr>
@@ -552,10 +558,14 @@
 
             
                 
-                <a href="FAQ.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 常见问题">
+                <a href="FAQ.html" class="navigation navigation-prev " aria-label="Previous page: 常见问题">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="../Upgrading.html" class="navigation navigation-next " aria-label="Next page: 迁移指南">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -564,12 +574,13 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"更新日志","level":"1.9","depth":1,"previous":{"title":"常见问题","level":"1.8","depth":1,"path":"resource/FAQ.md","ref":"./resource/FAQ.md","articles":[]},"dir":"ltr"},"config":{"plugins":["js-sequence-diagram-full@>=0.3.1","prism","-highlight","anchors","splitter","github","github-buttons","anchor-navigation-ex","alerts","expandable-chapters-small","favicon","pageview-count"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"oc":"objectivec","objc":"objectivec","objective-c":"objectivec"},"ignore":["sequence"]},"github":{"url":"https://github.com/TuyaInc/tuyasmart_panel_ios_sdk"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"js-sequence-diagram-full":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"favicon":{"shortcut":"zh-hans/resource/images/bitbug_favicon.ico"},"pageview-count":{},"alerts":{},"github-buttons":{"buttons":[{"user":"TuyaInc","repo":"tuyasmart_camera_panel_ios_sdk","type":"star","size":"small"},{"user":"TuyaInc","repo":"tuyasmart_camera_panel_ios_sdk","type":"watch","size":"small"},{"user":"TuyaInc","type":"follow","size":"small","count":true}]},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":true,"weibo":true,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","gitbook":"*"},"file":{"path":"resource/Update-Log.md","mtime":"2020-06-09T10:44:04.352Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-09T11:31:19.623Z"},"basePath":"..","book":{"language":"zh-hans"}});
+            gitbook.page.hasChanged({"page":{"title":"更新日志","level":"1.9","depth":1,"next":{"title":"迁移指南","level":"1.10","depth":1,"path":"Upgrading.md","ref":"Upgrading.md","articles":[]},"previous":{"title":"常见问题","level":"1.8","depth":1,"path":"resource/FAQ.md","ref":"./resource/FAQ.md","articles":[]},"dir":"ltr"},"config":{"plugins":["addcssjs","richquotes","prism","-hightlight","anchors","js-sequence-diagram-full@>=0.3.1","splitter","github","anchor-navigation-ex","expandable-chapters-small","pageview-count","language-picker","hide-element"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism.css"],"lang":{"oc":"objectivec","objc":"objectivec","objective-c":"objectivec"},"ignore":[]},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/TuyaInc/tuyasmart_bizbundle_ios_doc"},"splitter":{},"search":{},"addcssjs":{"css":[],"js":["../scripts/mermaid.min.js","../scripts/index.js"]},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"js-sequence-diagram-full":{},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"pageview-count":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","gitbook":"*"},"file":{"path":"resource/Update-Log.md","mtime":"2020-03-13T03:04:42.840Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-09T07:25:44.147Z"},"basePath":"..","book":{"language":"zh-hans"}});
         });
     </script>
 </div>
 
         
+    
     <script src="../../gitbook/gitbook.js"></script>
     <script src="../../gitbook/theme.js"></script>
     
@@ -590,19 +601,19 @@
         
     
         
-        <script src="../../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
-        
-    
-        
-        <script src="../../gitbook/gitbook-plugin-alerts/plugin.js"></script>
-        
-    
-        
         <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
         
     
         
         <script src="../../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
         
     
         
@@ -628,6 +639,12 @@
         
         <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
+    
+
+    
+    <script type="text/javascript" src="../../scripts/mermaid.min.js"></script>
+    
+    <script type="text/javascript" src="../../scripts/index.js"></script>
     
 
     </body>

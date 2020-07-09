@@ -4,7 +4,7 @@
 * [Panel Overview](./resource/Overview.md)
 * [Preparation before integration](./resource/Preparation.md)
 * [Integrated TuyaCameraPanelSDK](./resource/Integrated.md)
-* [TuyaCameraPanelSDK](./resource/CallSDK.md)
+* TuyaCameraPanelSDK
   * [Native Preview Panel](./resource/NativePanel.md)
   * [RN Preview Panel](./resource/RnPanel.md)
   * [Playback Panel](./resource/PlaybackPanel.md)
@@ -24,3 +24,4 @@
   * [Device Name](./resource/DeviceName.md)
 * [Frequently Asked Questions](./resource/FAQ.md)
 * [Change Log](./resource/Update-Log.md) 
+* [Upgrading](Upgrading.md)
